@@ -1,4 +1,6 @@
-from django.http import HttpResponse
-  
-def index(request):
-    return HttpResponse("Главнвя страница")
+from django.shortcuts import render
+
+
+def first_list(request):
+    return render(request, 'homepage/first_list.html')
+
