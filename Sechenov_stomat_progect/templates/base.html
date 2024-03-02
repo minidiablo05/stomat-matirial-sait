@@ -10,17 +10,11 @@
         <!-- Всё что находится внутри стаила надо перенести в статик фаил-->
     </head>
     <body><!-- Часть с текстом и остальным -->
-        <header>
-            <!--Верхняя часть страницы: логотип, контакты-->
-            <nav><!-- Меню (навигация)-->
-                {% include "includes/nav.html" %}
-            </nav>
-        </header>
+        <!--Верхняя часть страницы: логотип, контакты-->
+        {% include "includes/header.html" %}
         <main>
             <div>{% block content %}Контента пока нет : {% endblock %}</div>
         </main>
-        <footer>
-            .................   
-        </footer>
+        {% include "includes/footer.html" %}   
     </body>
 </html>

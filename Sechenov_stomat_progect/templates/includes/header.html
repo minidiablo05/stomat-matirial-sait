@@ -1,3 +1,4 @@
+<!-- Меню (навигация)-->
 <style>
     .top-menu {
       font-size: 30px;
@@ -19,9 +20,7 @@
         padding: auto;    
         width: auto;
         text-align: right;
-        float: right;
-        
-          
+        float: right;     
     }
     .m-menu > li {
         position: relative;
@@ -58,20 +57,22 @@
     }
 </style>
 
-<nav class="top-menu">
-    <a class="navbar-logo" href=""><img src="https://html5book.ru/wp-content/uploads/2017/04/lily-logo.png"></a>
-    <ul class="m-menu">
-        <li><a href="{% url 'homepage' %}">Главная</a></li>
-        <li>
-            <a href="#product">Контакты</a>
-            <ul class="s-menu">
-                <li><a href="#1">Учебные материалы</a></li>
-                <li><a href="#2">проверь себя</a></li>
-                <li><a href="#3">Печенье</a></li>
-            </ul>
-        </li>
-        <li><a href="#adress">Учебные материалы</a></li>
-        <li><a href="#adress">Проверь себя</a></li>
-        <li><a href="#adress">Предложи свою идею</a></li>
-    </ul>
-</nav>
+<header>
+    <nav class="top-menu">
+        <a class="navbar-logo" href=""><img src="https://html5book.ru/wp-content/uploads/2017/04/lily-logo.png"></a>
+        <ul class="m-menu">
+            <li><a href="{% url 'homepage' %}">Главная</a></li>
+            <li>
+                <a href="#product">Контакты</a>
+                <ul class="s-menu">
+                    <li><a href="#1">Учебные материалы</a></li>
+                    <li><a href="#2">проверь себя</a></li>
+                    <li><a href="#3">Печенье</a></li>
+                </ul>
+            </li>
+            <li><a href="#adress">Учебные материалы</a></li>
+            <li><a href="#adress">Проверь себя</a></li>
+            <li><a href="#adress">Предложи свою идею</a></li>
+        </ul>
+    </nav>
+</header>
