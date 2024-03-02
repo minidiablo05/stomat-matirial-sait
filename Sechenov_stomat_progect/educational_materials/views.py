@@ -10,4 +10,7 @@ def anatomia(request):
 def cariesology(request):
     return render(request, 'educational_materials/cariesology.html')
 
+def propaedeutics(request):
+    return render(request, 'educational_materials/propaedeutics.html')
+
 
