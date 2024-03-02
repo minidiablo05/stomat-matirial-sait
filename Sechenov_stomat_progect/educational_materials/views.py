@@ -13,4 +13,7 @@ def cariesology(request):
 def propaedeutics(request):
     return render(request, 'educational_materials/propaedeutics.html')
 
+def surgery(request):
+    return render(request, 'educational_materials/surgery.html')
+
 
