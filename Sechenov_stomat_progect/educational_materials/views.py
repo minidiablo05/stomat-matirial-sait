@@ -7,4 +7,7 @@ def first_list_educational_materials(request):
 def anatomia(request):
     return render(request, 'educational_materials/anatomia.html')
 
+def cariesology(request):
+    return render(request, 'educational_materials/cariesology.html')
+
 
