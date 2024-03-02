@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'homepage.apps.HomepageConfig',
+    'educational_materials.apps.EducationalMaterialsConfig',
 ]
 
 MIDDLEWARE = [
