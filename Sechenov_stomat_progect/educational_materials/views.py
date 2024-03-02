@@ -16,4 +16,5 @@ def propaedeutics(request):
 def surgery(request):
     return render(request, 'educational_materials/surgery.html')
 
-
+def endodontics(request):
+    return render(request, 'educational_materials/endodontics.html')

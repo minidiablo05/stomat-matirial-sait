@@ -6,5 +6,6 @@ urlpatterns = [
     path('anatomia/', views.anatomia, name='anatomia'),
     path('cariesology/', views.cariesology, name='cariesology'),
     path('propaedeutics/', views.propaedeutics, name='propaedeutics'),
-    path('surgery/', views.surgery, name='surgery')
+    path('surgery/', views.surgery, name='surgery'),
+    path('endodontics/', views.endodontics, name='endodontics')
 ]
