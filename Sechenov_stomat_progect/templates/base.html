@@ -1,4 +1,5 @@
 <!DOCTYPE html><!-- строчка говорящая о работе в HTML5 -->
+{% load static %}
 <html><!-- начало HTML документа(любого) -->
     <head><!-- содержит метаданные веб-страницы - заголовок веб-страницы, тип кодировки и т.д. -->
         <meta charset="utf-8"><!-- указываем кодировку -->
@@ -13,7 +14,7 @@
         <!--Верхняя часть страницы: логотип, контакты-->
         {% include "includes/header.html" %}
         <main>
-            <div>{% block content %}Контента пока нет : {% endblock %}</div>
+            <div>{% block content %}Контента пока нет :( {% endblock %}</div>
         </main>
         {% include "includes/footer.html" %}   
     </body>
