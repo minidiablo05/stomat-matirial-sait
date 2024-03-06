@@ -1,24 +1,29 @@
 <!-- Меню (навигация)-->
+
+{% load static %}
+
 <style>
     .top-menu {
-      font-size: 30px;
-      box-shadow: 3px 0 7px rgba(0,0,0,.3);
-      padding-top:30px;
-      padding-right: 25px;
-      padding-bottom: 35px;
-      padding-left: 28px;
+        font-size: 30px;
+        box-shadow: 3px 0 7px rgba(0,0,0,.3);
+        padding-top:30px;
+        padding-right: 25px;
+        padding-bottom: 35px;
+        padding-left: 28px;
     }
     <!-- пункт под удаление нижний-->
     .top-menu:after {
-      content: "";
-      display: table;
-      clear: both;
+        content: "";
+        display: table;
+        clear: both;
     }
-    .navbar-logo {display: inline-block;}
+    .navbar-logo {
+        display: inline-block;   
+    }
     .m-menu {
         margin: 0;
-        padding: auto;    
-        width: auto;
+        padding: 0;    
+        width: 85%;
         text-align: right;
         float: right;     
     }
@@ -27,7 +32,7 @@
         display: inline-block;
      }
     .m-menu a {
-        text-decoration: none;/* Убирает подчеркивание у ссвлки*/
+        text-decoration: none;/* Убирает подчеркивание у ссылки*/
         display: block;
         margin-left: -2px;
         padding: 13px;
@@ -40,7 +45,7 @@
     }
     
     .m-menu .s-menu {
-        left: 10px;
+        left: auto;
         position: absolute;
         display: none;
         width: 155px;
@@ -50,6 +55,8 @@
         
     }
     .m-menu .s-menu a {
+        width: 200px;
+        height: auto;
         border: 1px solid #000;
     }
     .m-menu > li:hover .s-menu {
@@ -59,7 +66,7 @@
 
 <header>
     <nav class="top-menu">
-        <a class="navbar-logo" href=""><img src="https://html5book.ru/wp-content/uploads/2017/04/lily-logo.png"></a>
+        <a class="navbar-logo" href=""><img src="{% static 'images/logo/STOM_i.png' %}" width="150" height="auto" style="margin-top: 18px;"></a>
         <ul class="m-menu">
             <li><a href="{% url 'homepage' %}">Главная</a></li>
             <li><a href="#product">Контакты</a></li>
