@@ -1,31 +1,46 @@
 ### Как запустить проект:
 
-1)  Клонировать репозиторий и перейти в него в командной строке:
-p.s. У меня по какойто причине клонирование через https не работает.
+1)  Выберите папку где хотите сохранить код сайта и перейдите в неё в командной строке.
+
+2)  Клонировать репозиторий и перейти в него в командной строке:
+
 ```
 git clone https://github.com/minidiablo05/stomat-matirial-sait.git
+или
 git clone git@github.com:minidiablo05/stomat-matirial-sait.git
 ```
 
-2)  Преход в командной строке
+3)  Преход в командной строке
+
 ```
 cd stomat-matirial-sait
 ```
 
-3)  Cоздать и активировать виртуальное окружение:
+4)  Cоздать виртуальное окружение:
 
 Windows
 ```
 python -m venv venv
-source venv/Scripts/activate
 ```
 Linux/macOS
 ```
 python3 -m venv venv
+```
+
+5)  Aктивировать виртуальное окружение:
+
+Windows
+```
+Если работаете в Git Bash:  source venv/Scripts/activate
+Если работаете в PowerShell:  venv\Scripts\activate
+Если работаете в командной строке (cmd):  venv\Scripts\activate
+```
+Linux/macOS
+```
 source venv/bin/activate
 ```
 
-4)  Обновить PIP
+6)  Обновить PIP
 
 Windows
 ```
@@ -36,31 +51,45 @@ Linux/macOS
 python3 -m pip install --upgrade pip
 ```
 
-5)  Установить зависимости из файла requirements.txt:
+7)  Установить зависимости из файла requirements.txt:
 
 ```
 pip install -r requirements.txt
 ```
 
-6)  Перейти в папку с кодом
+8)  Перейти в папку с кодом
+
 ```
 cd Sechenov_stomat_progect/
 ```
-7)  Выполнить миграции:
+
+9)  Выполнить миграции 1:
+
+p.s. Если здесь выдаёт "No changes detected" пропустите этап, если после проект будет работать, то всё хорошо, иначе напишите мне.
 
 Windows
 ```
-python manage.py makemigrations          p.s. Если здесь выдаёт "No changes detected" пропустите этап, если после проект будет работать, то всё хорошо, иначе напишите мне.
-python manage.py migrate
+python manage.py makemigrations          
+```
+
+Linux/macOS
+```
+python3 manage.py migrate
+```
+
+10)  Выполнить миграции 2:
+
+Windows
+```          
+python manage.py migrate                 
 ```
 
 Linux/macOS
 ```
 python3 manage.py makemigrations
-python3 manage.py migrate
 ```
 
-8)  Запустить проект:
+11)  Запустить проект:
 
 Windows
 ```
@@ -71,3 +100,5 @@ Linux/macOS
 ```
 python3 manage.py runserver
 ```
+
+После этого по адресу http://127.0.0.1:8000/ в адресной строке будет доступен сайт.
