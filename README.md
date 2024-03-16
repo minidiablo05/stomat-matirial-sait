@@ -7,7 +7,6 @@ git clone https://github.com/minidiablo05/stomat-matirial-sait.git
 git clone git@github.com:minidiablo05/stomat-matirial-sait.git
 ```
 
-```
 2)  Преход в командной строке
 ```
 cd stomat-matirial-sait
