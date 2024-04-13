@@ -1,87 +1,32 @@
 <!-- Меню (навигация)-->
 
 {% load static %}
-
-<style>
-    .top-menu {
-        font-size: 30px;
-        box-shadow: 3px 0 7px rgba(0,0,0,.3);
-        padding-top:30px;
-        padding-right: 25px;
-        padding-bottom: 35px;
-        padding-left: 28px;
-    }
-    <!-- пункт под удаление нижний-->
-    .top-menu:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-    .navbar-logo {
-        display: inline-block;   
-    }
-    .m-menu {
-        margin: 0;
-        padding: 0;    
-        width: 85%;
-        text-align: right;
-        float: right;     
-    }
-    .m-menu > li {
-        position: relative;
-        display: inline-block;
-     }
-    .m-menu a {
-        text-decoration: none;/* Убирает подчеркивание у ссылки*/
-        display: block;
-        margin-left: -2px;
-        padding: 13px;
-        color: #000000;
-        border-left: 3px solid #fff;
-    }
-    
-    .m-menu a:hover {
-        background: rgba(255,255,255,.5); /*Меняет цвет фона ссылки, когда на него наводишся*/
-    }
-    
-    .m-menu .s-menu {
-        left: auto;
-        position: absolute;
-        display: none;
-        width: 155px;
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        
-    }
-    .m-menu .s-menu a {
-        width: 200px;
-        height: auto;
-        border: 1px solid #000;
-    }
-    .m-menu > li:hover .s-menu {
-        display: block;
-    }
-</style>
+<link rel="stylesheet" href="{% static 'css/menu.css'%}" type="text/css">
 
 <header>
-    <nav class="top-menu">
-        <a class="navbar-logo" href=""><img src="{% static 'images/logo/STOM_i.png' %}" width="150" height="auto" style="margin-top: 18px;"></a>
-        <ul class="m-menu">
-            <li><a href="{% url 'homepage' %}">Главная</a></li>
-            <li><a href="#product">Контакты</a></li>
-            <li>
-                <a href="{% url 'f_l_e_m' %}">Учебные материалы</a>
-                <ul class="s-menu">
-                    <li><a href="{% url 'anatomia' %}">Анатомия</a></li>
-                    <li><a href="{% url 'cariesology' %}">Кариесология</a></li>
-                    <li><a href="{% url 'propaedeutics' %}">Пропедевтика</a></li>
-                    <li><a href="{% url 'surgery' %}">Хирургия</a></li>
-                    <li><a href="{% url 'endodontics' %}">Эндодотия</a></li>
-                </ul>
-            </li>
-            <li><a href="#adress">Проверь себя</a></li>
-            <li><a href="https://forms.gle/egrNUY5nF8qDXpWZ6" target="_blank">Предложи свою идею</a></li>
-        </ul>
+    <nav>
+        <div class="logo"><img src="{% static 'images/logo/STOM_i.png' %}"    height="50" width="150px"></div>
+        <div class="wrapper">
+            <ul class="nav-links">
+                <li><a href="{% url 'homepage' %}">Главная</a></li>
+                <li><a href="#product">Контакты</a></li>
+                <li class="dropdown">
+                    <a href="{% url 'f_l_e_m' %}" class="dropbtn">Учебные материалы</a>
+                    <div class="dropdown-content">
+                        <a href="{% url 'anatomia' %}">Анатомия</a>
+                        <a href="{% url 'cariesology' %}">Кариесология</a>
+                        <a href="{% url 'propaedeutics' %}">Пропедевтика</a>
+                        <a href="{% url 'surgery' %}">Хирургия</a>
+                        <a href="{% url 'endodontics' %}">Эндодотия</a>
+                </li>
+                <li><a href="#adress">Проверь себя</a></li>
+                <li><a href="https://forms.gle/egrNUY5nF8qDXpWZ6" target="_blank">Предложи свою идею</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
     </nav>
 </header>

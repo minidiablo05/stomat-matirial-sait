@@ -10,12 +10,15 @@
         <title>Документ HTML5</title><!-- элемент title представляет заголовок страницы -->
         <!-- Всё что находится внутри стаила надо перенести в статик фаил-->
     </head>
-    <body><!-- Часть с текстом и остальным -->
+    <body bgcolor="green"><!-- Часть с текстом и остальным -->
         <!--Верхняя часть страницы: логотип, контакты-->
         {% include "includes/header.html" %}
         <main>
             <div>{% block content %}Контента пока нет :( {% endblock %}</div>
         </main>
         {% include "includes/footer.html" %}   
+        <script src="{% static 'js/menu.js' %}"></script>
     </body>
 </html>
+
+  
