@@ -7,10 +7,11 @@
         <meta name="keywords" Content ="рога, копыта, рожки, рог, копыто, копытце,"><!--Ключевые слова веб-страницы-->
         <meta http-equiv ="Page-Enter" Content="RevealTrans(Duration=1.0, Transition=0)"><!-- Эффект появления страницы -->
         <meta http-equiv ="Page- Exit " Content="RevealTrans(Duration=3.0, Transition=23)"><!-- Эффект исчезновения страницы  -->
+        <link rel="stylesheet" href="{% static 'css/oll.css'%}" type="text/css">
         <title>Документ HTML5</title><!-- элемент title представляет заголовок страницы -->
         <!-- Всё что находится внутри стаила надо перенести в статик фаил-->
     </head>
-    <body bgcolor="green"><!-- Часть с текстом и остальным -->
+    <body><!-- Часть с текстом и остальным -->
         <!--Верхняя часть страницы: логотип, контакты-->
         {% include "includes/header.html" %}
         <main>

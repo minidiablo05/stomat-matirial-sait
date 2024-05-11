@@ -5,28 +5,26 @@
 
 <header>
     <nav>
-        <div class="logo"><img src="{% static 'images/logo/STOM_i.png' %}" height="25" width="75px"></div>
-        <div class="wrapper">
-            <ul class="nav-links">
-                <li><a href="{% url 'homepage' %}">Главная</a></li>
-                <li><a href="#product">Контакты</a></li>
-                <li class="dropdown">
-                    <a href="{% url 'f_l_e_m' %}" class="dropbtn">Учебные материалы</a>
-                    <div class="dropdown-content">
-                        <a href="{% url 'anatomia' %}">Анатомия</a>
-                        <a href="{% url 'cariesology' %}">Кариесология</a>
-                        <a href="{% url 'propaedeutics' %}">Пропедевтика</a>
-                        <a href="{% url 'surgery' %}">Хирургия</a>
-                        <a href="{% url 'endodontics' %}">Эндодотия</a>
-                </li>
-                <li><a href="#adress">Проверь себя</a></li>
-                <li><a href="https://forms.gle/egrNUY5nF8qDXpWZ6" target="_blank">Предложи свою идею</a></li>
-            </ul>
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
+        <a class="logo" href="{% url 'homepage' %}"><img src="{% static 'images/logo/stom_i.png' %}" height="50" width="150px"></a>
+        <ul class="nav-links">
+            <li><a href="{% url 'homepage' %}">Главная</a></li>
+            <li><a href="#product">Контакты</a></li>
+            <li class="dropdown">
+                <a href="{% url 'f_l_e_m' %}" class="dropbtn">Учебные материалы</a>
+                <div class="dropdown-content">
+                    <a href="{% url 'anatomia' %}">Анатомия</a>
+                    <a href="{% url 'cariesology' %}">Кариесология</a>
+                    <a href="{% url 'propaedeutics' %}">Пропедевтика</a>
+                    <a href="{% url 'surgery' %}">Хирургия</a>
+                    <a href="{% url 'endodontics' %}">Эндодотия</a>
+            </li>
+            <li><a href="#adress">Проверь себя</a></li>
+            <li><a href="https://forms.gle/egrNUY5nF8qDXpWZ6" target="_blank">Предложи свою идею</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
         </div>
     </nav>
 </header>

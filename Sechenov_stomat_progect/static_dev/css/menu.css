@@ -7,27 +7,9 @@
     box-sizing: border-box;
 }
 
-.wrapper {
-    max-width: 800px;
-    width: 90%;
-    margin: 0 auto;
-    float: right; 
-}
 
-/* детальная настройка стилей меню до функцианирогвания */
-header {
-    height: 80px;
-}
-
-header nav .wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 80px;
-}
 
 header .logo {
-background-image: url("../images/logo/back_up.png");
     height: 50px;
     width: 150px;
     background-size: 150px 50px;
@@ -35,11 +17,26 @@ background-image: url("../images/logo/back_up.png");
     float: left; 
 }
 
+/* детальная настройка стилей меню до функцианирогвания */
+header {
+    height: 80px;
+}
+.nav-links {
+    max-width: 800px;
+    margin: 0 auto;
+    float: right; 
+    display: flex;
+    align-items: right;
+    justify-content: space-between;
+    height: 80px;
+    margin: 15px 0 0 0;
+}
+
 header ul {
     margin: 0;
     padding: 0;
     display: flex;
-    width: 1000px;
+    width: 800px;
     justify-content: space-between;    
 }
 
@@ -110,11 +107,6 @@ li.dropdown {
 
 @media screen and (max-width:1010px) {
 
-    .wrapper {
-        width: 46px;
-        margin: 0 0;
-    }
-
     .nav-links {
         position: absolute;
         left: 100%;
@@ -140,6 +132,7 @@ li.dropdown {
         display: block;
         cursor: pointer;
         z-index: 1;
+        float: right; 
     }
 
     .nav-active {
@@ -148,7 +141,7 @@ li.dropdown {
 
     .close .line1 {
         transform: rotate(-45deg) translate(-8px,6px);
-        margin-bottom: 17px;
+        margin-bottom: 30px;
     }
 
     .close .line2 {
