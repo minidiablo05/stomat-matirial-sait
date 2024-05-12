@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'homepage.apps.HomepageConfig',
     'educational_materials.apps.EducationalMaterialsConfig',
+    'test_yourself.apps.TestYourselfConfig',
 ]
 
 MIDDLEWARE = [
