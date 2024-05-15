@@ -1,66 +1,24 @@
-<!--Код главной страници-->
+
 {% extends "base.html" %}
 {% load static %}
 {% block content %}
-<style type="text/css">
-.container div {
-  float: left;
-  margin-bottom: 15px;
-}
+<link rel="stylesheet" href="{% static 'css/first_list.css'%}" type="text/css">
 
-.col-1-1 {
-    height: 500px;
-    width: 31%;
-    margin: auto;
-    word-break: break-word;
-    position: relative;
-    text-align: center;
-}
-
-.col-1-2 {
-    height: 500px;
-    width: 31%;
-    margin: auto;
-    word-break: break-word;
-}
-
-.col-1-3 {
-    height: 500px;
-    width: 31%;
-    margin: auto;
-    word-break: break-word;
-}
-.col-otstup {
-    height: 500px;
-    width: 3%;
-    margin: auto;
-}
-
-.foto{
-    position: relative;
-}
-
-
-</style>
-<div class="container">
-    <div class="col-1-1">
-        <img class="foto" src="{% static 'images/first_list_img/back_1_3.png' %}" width="100%" style='position:absolute;'>
-        <div style='position:absolute;'>
-            <h2>Мы команда студентов</h2>
+<div>
+    <div class="container">
+        <div class="col-1-1">
+            <h1>ОПУБЛИКОВАННЫ НОВЫЕ МАТЕРИАЛЫ</h1>
+            <a class="silka" href="{% url 'f_l_e_m' %}"><h3>перейти</h3><img src="{% static 'images/oll/strelka.png' %}" width = "50px" height="50px"></a>
         </div>
-    </div>
-    <div class="col-otstup"></div>
-    <div class="col-1-2">
-        <img class="foto" src="{% static 'images/first_list_img/back_2.png' %}" width="100%" style='position:relative;'>
-        <div style='position:absolute;'>
-            <h2>Мы команда студентов</h2>
+        <div class="col-otstup"></div>
+        <div class="col-1-2">
+            <h1>МЫ КОМАНДА СТУДЕНТОВ</h1>
+            <h3>STOM.i - это онлайн-платформа, предназначенная для студентов стоматологического факультета. Здесь собраны учебные материалы на самые разнообразные темы в области стоматологиии, которые помогут специалистам поддерживать свои знания и навыки на акетуальном уровне.</h3>
         </div>
-    </div>
-    <div class="col-otstup"></div>
-    <div class="col-1-3">
-        <img class="foto" src="{% static 'images/first_list_img/back_1_3.png' %}" width="100%" style='position:relative;'>
-        <div style='position:absolute;'>
-            <h2>Мы команда студентов</h2>
+        <div class="col-otstup"></div>
+        <div class="col-1-3">
+            <h1>ПОПРОБУЙ ПРОЙТИ ТЕСТ ПО НОВОЙ ТЕМЕ</h1>
+            <a class="silka" href="{% url 'test' %}"><h3>перейти</h3><img src="{% static 'images/oll/strelka.png' %}" width="50px" height="50px"></a>
         </div>
     </div>
 </div>

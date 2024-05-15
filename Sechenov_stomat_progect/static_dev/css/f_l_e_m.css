@@ -1,0 +1,40 @@
+
+.container div {
+    float: left;
+    margin-bottom: 15px;
+  }
+  
+  .col-main {
+      height: 100px;
+      width: 31%;
+      margin: auto;
+      word-break: break-word;
+      position: relative;
+      display: inline-block;   
+      background-image: url(../images/f_l_e_m/back.png);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-attachment: local;
+      background-size: cover;
+      color: white; 
+  }
+
+  .col-otstup {
+      height: 200px;
+      width: 3%;
+      margin: auto;
+  }
+  
+  h1{
+      text-align: center;
+  }
+  .silka-text{
+    float: left;
+    color: white;
+    margin: 0px 0px 0px 20px;
+  }
+  .silka{
+      float: right;
+      color: white;
+      margin: 20px 20px 0px 0px;
+  }

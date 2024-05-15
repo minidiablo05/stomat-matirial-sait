@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'homepage.apps.HomepageConfig',
     'educational_materials.apps.EducationalMaterialsConfig',
     'test_yourself.apps.TestYourselfConfig',
+    'contact.apps.ContactConfig',
 ]
 
 MIDDLEWARE = [
